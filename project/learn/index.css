@@ -1,0 +1,33 @@
+
+.container {
+    border: 2px solid red ;
+    display: grid;
+    grid-template: repeat(4,100px) / repeat(3,1fr);
+    /* grid-template-columns: repeat(auto-fill,minmax(400px,1fr));  */
+    gap: 10px;
+}
+.item{
+   
+    background-color: skyblue;
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        grid-template: repeat(12,200px)/ repeat(1,1fr);
+    }
+  
+}
+
+
+/* .header{
+    column-span: 12;
+}
+.menu{
+    column-span: 6;
+}
+.content{
+    column-span: 6;
+}
+.footer{
+    column-span: 12;
+} */
